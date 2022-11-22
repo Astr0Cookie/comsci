@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="styles.css">
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init("q5r9QgitN6CfxLWsX");
+            })();
+        </script>
+    </head>
+
+    <body>
+        <audio src="Balls in Your Jaws Remix INSTRUMENTAL _ Original by Kornell aka Piermid.webm" loop="true" autoplay="true" id="music"></audio>
+        <div class="profile">
+            <h1>About me</h1>
+            <p style="font-size: xx-large;">Karl Andrew D. Asoy</p>
+            <p><i><s>Handsome</s>, Smart And <b>CRAZY</b></i></p>
+            <img src="imgs/310321416_680079230115448_9136841288367474577_n.jpg" alt="picture of karl">
+            <br>
+            <h2>A Short Description</h2>
+            <p class="desc">Hi I am Karl Andrew D. Asoy, I am 13yrs old and i live in Poblacion, Belison, Antique. <br> I am a animal lover and i like to cook food.My hobbies are to play sports like badminton and chess. <br> I also like to code games and websites and do other cool stuff!!!</p>
+        </div>
+
+
+
+        <div class="input">
+            <h3>Check Out This Thing I Made!</h3>
+            <font size="5%">
+                <p>Kinda Like <a href="https://ngl.link/" target="_blank"> Ngl</a> But Web-Based And Uses Emails</p>
+            </font>
+            <label for="to"><b>To:</b></label>
+            <input type="email" placeholder="abc@gmail.com" id="to" required>
+            <label for="message"><b>Message:</b></label>
+            <textarea placeholder="The Message" name="joe" id="message" required></textarea> <br>
+            <button onclick="SendMail()">send</button>
+        </div>
+
+
+
+
+        <script>
+            var music = document.getElementById("music")
+            music.volume = 0.5
+            function SendMail() {
+                var params = {
+                    message: document.getElementById("message").value,
+                    to: document.getElementById("to").value
+                }
+                emailjs.send("service_kp1bmod", "template_7kmynsr", params)
+                    .then(function(response) {
+                        alert('SUCCESS!', response.status, response.text);
+                    }, function(error) {
+                        alert('FAILED...', error);
+                    });
+            }
+        </script>
+    </body>
+</html>

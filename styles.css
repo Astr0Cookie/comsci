@@ -1,0 +1,59 @@
+.input {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    margin-top: 64px;
+    font-size: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: lightsalmon;
+}
+
+body {
+    padding: 24px;
+    background-color: rgb(238, 137, 97);
+}
+
+input, textarea, button {
+    margin: 4px 0;
+    padding: 8px;
+}
+
+textarea {
+    resize: none;
+    width: 500px;
+    height: 200px;
+}
+
+label {
+    display: block;
+}
+
+.profile {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    font-size: 20px;
+    text-align: center;
+    background-color: lightslategray;
+}
+.profile img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 50px;
+}
+
+.desc {
+    padding-bottom: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(54, 54, 54);
+}
+
+a:visited {
+    color: rgb(41, 41, 41);
+    text-decoration: none;
+}
