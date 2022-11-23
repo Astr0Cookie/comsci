@@ -23,11 +23,12 @@
             <p style="font-size: xx-large;">Karl Andrew D. Asoy</p>
             <p><i><s>Handsome</s>, Smart And <b>CRAZY</b></i></p>
             <img src="imgs/310321416_680079230115448_9136841288367474577_n.jpg" alt="picture of karl">
-            <p>music?</p>
-            <embed src="Balls in Your Jaws Remix INSTRUMENTAL _ Original by Kornell aka Piermid.webm" loop="true" autoplay="true">
-            <br>
+            <h2>Music?</h2>
+            <audio controls loop="true">
+                <source src="Balls in Your Jaws Remix INSTRUMENTAL _ Original by Kornell aka Piermid.webm">
+            </audio>
             <h2>A Short Description</h2>
-            <p class="desc">Hi I am Karl Andrew D. Asoy, I am 13yrs old and i live in Poblacion, Belison, Antique. <br> I am a animal lover and i like to cook food.My hobbies are to play sports like badminton and chess. <br> I also like to code games and websites and do other cool stuff!!!</p>
+            <p class="desc">Hi I am Karl Andrew D. Asoy, I am 13yrs old and i live in Poblacion, Belison, Antique. <br> I Was born on May on 2009 in Angel Salazar Memorial Hospital located in san jose, antique <br> I am a animal lover and i like to cook food.My hobbies are to play sports like badminton and chess. <br> I also like to code games and websites and do other cool stuff!!!</p>
         </div>
 
 
@@ -35,7 +36,7 @@
         <div class="input">
             <h3>Check Out This Thing I Made!</h3>
             <font size="5%">
-                <p>Kinda Like <a href="https://ngl.link/" target="_blank"> Ngl</a> But Web-Based And Uses Emails</p>
+                <p>Kinda Like <a href="https://ngl.link/" target="_blank"> Ngl</a> But Web-Based And Uses Emails <br>(<i>Needs Internet Connection</i>)</p>
             </font>
             <label for="to"><b>To:</b></label>
             <input type="email" placeholder="abc@gmail.com" id="to" required>
@@ -48,8 +49,6 @@
 
 
         <script>
-            var music = document.getElementById("music")
-            music.volume = 0.5
             function SendMail() {
                 var params = {
                     message: document.getElementById("message").value,
